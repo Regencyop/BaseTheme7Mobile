@@ -6,9 +6,9 @@ html {
 }
 	body {
 	    margin: 0;
-		/*background: #073b66;*/
+		background: #fff;
 		/* background image full screen */
-    		background: #fff url('http://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/backgroundImage/TNBackground.jpg') no-repeat center center fixed;
+    		background: #fff url('http://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/backgroundImage/TNBackground2.jpg') no-repeat center center fixed;
     		-webkit-background-size: cover;
     		-moz-background-size: cover;
     		-o-background-size: cover;
@@ -6413,10 +6413,12 @@ button::-moz-focus-inner {
 .navbar .container-view .navbar-nav.pull-left li a span {
   margin-left: 5px;
 }
+
 .navbar .container .navbar-nav.pull-left li ul li,
 .navbar .container-view .navbar-nav.pull-left li ul li {
-  width: 100%;
+  width: 175px;
 }
+
 .navbar .container .navbar-nav.pull-left li ul li a,
 .navbar .container-view .navbar-nav.pull-left li ul li a {
   padding: 10px 20px;
@@ -6610,7 +6612,7 @@ button::-moz-focus-inner {
   margin-bottom: 0;
 }
 .thumbnail img {
-  max-height: 300px;
+  max-height: 500px;
 
 }
 
@@ -8780,7 +8782,8 @@ table[datepicker] {
 
 #mainNavigation{
         /* background image full screen */
-    		background: #fff url('http://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/backgroundImage/TNBackground.jpg') no-repeat center center fixed;
+    		background: #fff url('http://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/backgroundImage/TNBackground2.jpg') no-repeat center center fixed;
+    		/*background: #fff;*/
     		-webkit-background-size: cover;
     		-moz-background-size: cover;
     		-o-background-size: cover;
@@ -8873,7 +8876,6 @@ table[datepicker] {
     .panel-default {
         box-shadow: none !important;
     }
-
 
 
 

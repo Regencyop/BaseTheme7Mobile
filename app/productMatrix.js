@@ -55,6 +55,7 @@ function productmatrix() {
             '</div>',
             '</div>',
             '</div>',
+            //updated and correct
             '<div class="alert alert-danger" style="margin-top:20px;" ng-show="qtyError" ng-bind-html="qtyError"></div>',
             '<button class="btn btn-success btn-block btn-lg" type="button" id="451_btn_orderadd" ng-disabled="qtyError" ng-click="addVariantsToOrder()"><loadingindicator ng-show="addToOrderIndicator" /><i ng-show="lineItemErrors.length > 0" class="fa fa-warning"></i>{{addToOrderText | r}}</button>',
             '</div>'
@@ -64,9 +65,9 @@ function productmatrix() {
 
 ProductMatrixCtrl.$inject = ['$scope', '$routeParams', '$route', '$location', '$451', 'Product', 'ProductDisplayService', 'Order', 'Variant', 'User', 'ProductMatrix'];
 function ProductMatrixCtrl($scope, $routeParams, $route, $location, $451, Product, ProductDisplayService, Order, Variant, User, ProductMatrix) {
-    $scope.addToOrderText = "Add To Cart";
-    $scope.searchTerm = null;
-    $scope.currentOrder = $scope.$parent.$parent.currentOrder;
+      $scope.addToOrderText = " Add to Order";
+      $scope.searchTerm = null;
+      $scope.currentOrder = $scope.$parent.$parent.currentOrder;
 
     $scope.lineItemIndex = $routeParams.lineItemIndex;
 
@@ -104,8 +105,8 @@ function ProductMatrixCtrl($scope, $routeParams, $route, $location, $451, Produc
     function saveOrder() {
         Order.clearshipping($scope.currentOrder).save($scope.currentOrder,
             function(o){
-                $scope.$parent.$parent.user.CurrentOrderID = o.ID;
-                User.save($scope.$parent.$parent.user, function(){
+                $scope.$parent.user.CurrentOrderID = o.ID;
+                User.save($scope.$parent.user, function(){
                     $scope.addToOrderIndicator = true;
                     $location.path('/cart');
                 });

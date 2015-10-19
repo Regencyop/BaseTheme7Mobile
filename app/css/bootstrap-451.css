@@ -10183,3 +10183,8 @@ table[datepicker] {
 .fa-bomb:before {
   content: "\f1e2";
 }
+
+
+.jetzoom-lens {
+    border-radius: 700px !important;
+}
