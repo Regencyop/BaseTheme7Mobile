@@ -2934,12 +2934,29 @@
         width: 100%;
         border-right: 2px solid #bbb;
         margin-right: 3%;
-    } 
+    }
+    
+    .jumbotron .container {
+        height: 100px;
+    }
+}
+
+@media (max-width: 395px) {
+    .categoryContainer {
+        height: 300px;
+    }
+}
+
+@media (max-width: 300px) {
+    .categoryContainer {
+        height: 225px;
+    }
 }
     
-    
-    
-    
-    
+@media (max-width: 200px) {
+    .categoryContainer {
+        height: 150px;
+    }
+}
     
     
