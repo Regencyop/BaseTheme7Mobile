@@ -50,6 +50,7 @@
 
     .mainImage img {
         max-width: 500px;
+        max-height: 143px;
         padding-top: 8px;
     }
 
