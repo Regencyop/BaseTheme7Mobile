@@ -1,6 +1,327 @@
-/*
-Static file for Theme changes
-Theme name: My SPA Theme
-Version: 1.0
-Template: Howdy
-*/
+  /*
+  Last CSS file in Index
+  For simple changes
+  Version: 1.0
+  Template: BaseTheme7
+  */
+
+    html {
+        font-family: sans-serif;
+    }
+
+
+    /* --------------Main Site Colors-------------- */
+
+
+    /* it is recommended to use either background with a URL
+       or to use background color exclusively of one another.
+       You can comment out everything from background: url to
+       background-size: cover; and then remove the comments 
+       surrounding color and background-color below those line */
+    
+    /* Main Navigation controls the navbar background. 
+       This carousel is included in this. */   
+
+    #mainNavigation{
+        /* background image full screen */
+        background: #fff url('http://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/backgroundImage/TNBackground2.jpg') no-repeat center center fixed;
+        /*background: #fff;*/
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }   
+
+
+    /* Body controls everything below the carousel. */   
+
+    body {
+        /* background: #fff; */
+        /* background image full screen */
+        background: #fff url('http://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/backgroundImage/TNBackground2.jpg') 
+        no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    /* Controls the size of the logo image on the top left. */
+
+    .mainImage img {
+        max-width: 500px;
+        padding-top: 8px;
+    }
+
+    /* --------------NavBar-------------- */
+
+    /* Main Navbar Background - the right side - 
+       you can add this class to the PDT to match 
+       the right side of the navbar
+       --This also controls the background-color 
+       of the headers on !2.0_BaseTheme2and3_MainTemplate1*/
+
+    /* Main navbar Background color */
+  
+    .navColor {
+        background-color: transparent !important;
+        border-bottom: 1px solid #f69421;
+        color: #f69421 !important;
+    }
+    
+    /* Links on left hand side, left arrow, right side navbar cart info */    
+    
+    /* inherits the navColor attributes on background color and color */
+    
+    .navColor li a {
+        background-color: inherit !important;
+        color: inherit !important;
+    }
+  
+    .navColor li a:hover,
+    .navColor li a:active,
+    .navColor li a:focus {
+        background-color: #f69421 !important;
+        color: #fefefe !important;
+    }
+    
+    .colorControl {
+        color: #f69421 !important;
+    }
+    
+    .colorControl:hover {
+        color: white !important;
+        background-color: #f69421 !important;
+    }
+    
+    /* Make these colors match the colorControl class */
+    
+    .dropdown #dropdownColorControl {
+        background-color: #f69421 !important;
+        color: white !important;
+        border-top: solid thin white !important;
+    }
+    
+    #dropdownColorControl li {
+        background-color: transparent !important;
+        color: white !important;
+    }
+    
+    #dropdownColorControl li a:hover,
+    #dropdownColorControl li a:active, 
+    #dropdownColorControl li a:focus {
+        background-color: transparent !important;
+        color: white !important;
+        font-weight: bolder;
+    }
+    
+    .fa-caret-down {
+        color: #f69421 !important;
+    }
+    
+    .cartCountColor {
+        background-color: #f69421 !important;
+        color: white !important;
+    }
+    
+    /* Three Bars color control */
+
+    .navControlBars {
+        color: #f69421 !important;
+        background-color: transparent !important;
+    }
+    
+    .colorControlNoBackground {
+        color: #f69421 !important;
+    }
+    
+    .colorControlNoBackground:hover,
+    .colorControlNoBackground:active,
+    .colorControlNoBackground:focus {
+        color: #f69421 !important;
+    }
+    
+    /* leave this as inherit */
+    
+    .faColorControl {
+        color: inherit !important;
+    }
+
+    .fa-shopping-cart {
+    }
+
+    /* Right Nav Bar Colors - below the main navbar */
+    .navColorRight {
+        background-color: transparent !important;
+    }
+    
+    .colorControlRight > li > a {
+        color: #f69421 !important;
+    }
+    
+    .colorControlRight > li > a:hover,
+    .colorControlRight > li > a:active,
+    .colorControlRight > li > a:focus {
+        background-color: #f69421 !important;
+        color: #fff !important;
+    }
+
+    /* dropdown Menus right side */
+
+    .navColorRight .colorControlRight > li > .dropdown-menu {
+        background-color: #f69421 !important;
+    }
+
+    .colorControlRight .dropdown-menu li {
+        background-color: transparent !important;
+        color: white !important;
+    }
+
+    .colorControlRight .dropdown-menu li:hover {
+        background-color: transparent !important;
+        color: white !important;
+        font-weight: bold;
+    }
+    
+    /* line above container-view */
+
+    #categoryTitle {
+        border-bottom: 3px double #f69421;
+        background-color: transparent;
+    }
+
+    /* line below container-view */
+    
+    .container-view {
+        border-bottom: 1px solid #f69421 !important;
+    }
+
+    /* text Colors */
+    
+    .text-primary {
+        color: black !important;
+        /* color: #f69421 !important; */
+    }
+    
+    .text-primary:hover {
+    }
+
+    .text-info {
+        color: grey !important;
+    }
+    
+    .text-info:hover {
+    }
+
+    .text-success {
+        color: grey !important;
+    }
+    
+    .text-success:hover {
+        color: grey !important;
+    }
+
+    .text-warning,
+    .text-danger {
+        color: red !important;
+    }
+
+    
+    /* buttons */
+    
+    .btn-primary .badge {
+      color: #666;
+      background-color: #ffffff;
+    }
+    
+    .btn-success {
+      color: #ffffff;
+      background-color: #676767;
+      border-color: #454545;
+    }
+    
+    .btn-success:hover,
+    .btn-success:focus,
+    .btn-success:active,
+    .btn-success.active,
+    .open .dropdown-toggle.btn-success {
+      color: #ffffff;
+      background-color: #454545;
+      border-color: #232323;
+    }
+    
+    /* this controls the cart button colors and their hover states */
+    
+    .cancelColor {
+        background-color: grey !important;
+        color: white !important;
+    }
+    
+    .cancelColor:hover {
+        background-color: #505050 !important;
+    }
+    
+    .saveColor {
+        background-color: grey !important; 
+        color: white !important;
+    }
+    
+    .saveColor:hover { 
+        background-color: #505050 !important;
+    }
+    
+    .submitColor {
+        background-color: #505050 !important;
+        color: white !important;
+    }
+    
+    .submitColor:hover {
+        background-color: #222 !important;
+    }
+    
+    /* right side of line item */
+    
+    .deleteItem {
+        background-color: red !important;
+        border: none !important;
+    }
+    
+    .deleteItem:hover {
+        background-color: darkred !important;
+        border: none !important;
+    }
+
+    /* Quick Hits */
+
+    /* animation controls */
+
+    #animateControl {
+        -webkit-animation-duration: 1s;
+        -webkit-animation-delay: 1.5s;
+        -moz-animation-duration: 1s;
+        -moz-animation-delay: 1.5s;        
+        -o-animation-duration: 1s;
+        -o-animation-delay: 1.5s;        
+    }
+
+    .backgroundControl {
+        background-color: rgba(255, 255, 255, 0.5) !important;
+    }
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+/* BB */
