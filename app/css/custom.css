@@ -53,6 +53,18 @@
         max-height: 143px;
         padding-top: 8px;
     }
+    
+    
+    @media (max-width: 767px) {
+    .mainImage img {
+        max-width: 300px;
+        max-height: 143px;
+        padding-top: 8px;
+    }
+}
+    
+    
+    
 
     /* --------------NavBar-------------- */
 
