@@ -22,7 +22,7 @@
     /* Main Navigation controls the navbar background. 
        This carousel is included in this. */   
 
-    #mainNavigation{
+    #brandingAndNavContainer{
         /* background image full screen */
         background: #fff url('http://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/backgroundImage/TNBackground2.jpg') no-repeat center center fixed;
         /*background: #fff;*/
@@ -320,6 +320,41 @@
     .backgroundControl {
         background-color: rgba(255, 255, 255, 0.5) !important;
     }
+
+  
+    /* controls headroom hide and display */
+    .navbar-fixed-top.headroom {
+        transition: all 0.5s ease-in-out;
+        border-bottom: 1px solid #fff;
+    }
+    .navbar-fixed-top.headroom.headroom--unpinned {
+      top: -100px;
+    }
+    .navbar-fixed-top.headroom.headroom--pinned {
+      top: 0;
+    }
+
+    .navSpanContainer {
+    }    
+
+
+    .carouselContainer {
+        position: relative;
+        top: 5px;
+    }
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+/* BB */
 
 
 
