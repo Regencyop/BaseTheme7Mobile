@@ -2535,7 +2535,9 @@
     }
     
     .navbar .container {
-        height: 16px;
+        height: 0px;
+        position: relative;
+        bottom: 16px;
     }
 
     .mainImage img {
@@ -2559,11 +2561,19 @@
         background-color: red !important;
     }
     
+    /* controls right hand side links when carousel is not present */
+    
     .rightNavBar > .navbar-nav > li > a {
         height: 60px;
         padding: 75px 35px;
         line-height: 0px;
         font-weight: 600;
+    }
+    
+    /* controls right hand side links when carousel is present */
+    
+    .navRightHeightControl  > .navbar-nav > li > a {
+        padding: 78px 35px;
     }
 
     .rightNavBar .navbar-nav .dropdown li {
@@ -2576,7 +2586,7 @@
         text-align: center;
         font-size: 15px;
         padding: 12px 20px;
-        width: 205px;
+        width: 235px;
     }
 
     
@@ -2619,13 +2629,15 @@
     .footerContainer {
         text-align: center;
         margin: 30px auto;
+        color: #092F86;
     }
 
     .socialIcon {
+        color: #092F86;
         padding: 0px 10px;
         -webkit-animation-play-state: paused;
         -webkit-animation-iteration-count: infinite;
-        -webkit-animation-delay: 0.3s;
+        -webkit-animation-delay: 1s;
     }
     
     .socialIcon:hover {
@@ -2958,8 +2970,9 @@
         height: 150px;
     }
 }
-    
-/* line below products */
+
 .panel-product-list {
     padding-bottom: 25px;
 }
+
+
