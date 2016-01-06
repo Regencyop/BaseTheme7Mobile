@@ -10,13 +10,33 @@ four51.app.config(['$routeProvider', '$locationProvider', function($routeProvide
 	}
 
 	$routeProvider.
-		when('/listOrders', { templateUrl: 'partials/listOrders.html', controller: 'ListOrdersCtrl' }).
-		when('/orderdetails/:orderid', {templateUrl: 'partials/orderDetails.html', controller: 'OrderDetailsCtrl'}).
-        when('/catalog', { templateUrl: 'partials/categoryView.html', controller: 'CategoryCtrl' }).
-        when('/catalog/:categoryInteropID', { templateUrl: 'partials/categoryView.html', controller: 'CategoryCtrl' }).
-        when('/product/:productInteropID', {templateUrl: concatProductView, controller: 'ProductCtrl'}).
-        when('/product/:productInteropID/:variantInteropID', {templateUrl: concatProductView, controller: 'ProductCtrl'}).
-		when('/product/:productInteropID/:variantInteropID/edit', {templateUrl: concatSpecFormView, controller: 'SpecFormCtrl'}).
+		when('/listOrders', 
+		    { templateUrl: 'partials/listOrders.html', controller: 'ListOrdersCtrl' }).
+		    
+		when('/orderdetails/:orderid', 
+		    {templateUrl: 'partials/orderDetails.html', controller: 'OrderDetailsCtrl'}).
+		    
+        when('/catalog', 
+            { templateUrl: 'partials/categoryView.html', controller: 'CategoryCtrl' }).
+
+       	//40849-konaWearAll 
+        //come back to this 
+        //when('/catalog/40849-konaWearAll', 
+        //    {templateUrl: concatProductView, controller: 'CategoryCtrlApparel'}).  
+            
+        when('/catalog/:categoryInteropID', 
+            { templateUrl: 'partials/categoryView.html', controller: 'CategoryCtrl' }).
+            
+        when('/product/:productInteropID', 
+            {templateUrl: concatProductView, controller: 'ProductCtrl'}).
+        
+        when('/product/:productInteropID/:variantInteropID', 
+            {templateUrl: concatProductView, controller: 'ProductCtrl'}).          
+            
+		when('/product/:productInteropID/:variantInteropID/edit', 
+		    {templateUrl: concatSpecFormView, controller: 'SpecFormCtrl'}).
+		    
+		//untouched
 		when('/order', { templateUrl: 'partials/orderSearchView.html', controller: 'OrderSearchCtrl' }).
 		when('/order/:id', { templateUrl: 'partials/Reporting/orderHistoryView.html', controller: 'OrderViewCtrl' }).
 		when('/favoriteorders', { templateUrl: 'partials/favoriteOrderListView.html', controller: 'FavoriteOrderCtrl' }).
