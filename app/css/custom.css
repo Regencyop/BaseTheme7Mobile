@@ -24,13 +24,20 @@
 
     #brandingAndNavContainer{
         /* background image full screen */
-        background: #fff url('http://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/backgroundImage/TNBackground2.jpg') no-repeat center center fixed;
+        background: #fff url('https://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/backgroundImage/konaIce/KonaNavBackground-small.jpg') no-repeat center center fixed;
         /*background: #fff;*/
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-    }   
+    }  
+    .navbar-fixed-top.headroom.headroom--pinned {
+        background: url('https://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/backgroundImage/konaIce/KonaNavBackground-small.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 
 
     /* Body controls everything below the carousel. */   
@@ -38,7 +45,7 @@
     body {
         /* background: #fff; */
         /* background image full screen */
-        background: #fff url('http://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/backgroundImage/TNBackground2.jpg') 
+        background: #fff url('https://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/backgroundImage/konaIce/KonaMainBackground.jpg') 
         no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -54,8 +61,7 @@
         padding-top: 8px;
     }
     
-    
-    @media (max-width: 767px) {
+@media (max-width: 767px) {
     .mainImage img {
         max-width: 300px;
         max-height: 143px;
@@ -78,8 +84,7 @@
   
     .navColor {
         background-color: transparent !important;
-        border-bottom: 1px solid #f69421;
-        color: #f69421 !important;
+        color: #fff !important;
     }
     
     /* Links on left hand side, left arrow, right side navbar cart info */    
@@ -94,25 +99,26 @@
     .navColor li a:hover,
     .navColor li a:active,
     .navColor li a:focus {
-        background-color: #f69421 !important;
+        background-color: #092F87 !important;
         color: #fefefe !important;
     }
     
     .colorControl {
-        color: #f69421 !important;
+        color: #fff !important;
     }
     
     .colorControl:hover {
         color: white !important;
-        background-color: #f69421 !important;
+        background-color: #092F87 !important;
     }
     
     /* Make these colors match the colorControl class */
     
     .dropdown #dropdownColorControl {
-        background-color: #f69421 !important;
+        background-color: #092F87 !important;
         color: white !important;
         border-top: solid thin white !important;
+        width: 215px;
     }
     
     #dropdownColorControl li {
@@ -129,29 +135,29 @@
     }
     
     .fa-caret-down {
-        color: #f69421 !important;
+        color: #092F87 !important;
     }
     
     .cartCountColor {
-        background-color: #f69421 !important;
-        color: white !important;
+        background-color: #fff !important;
+        color: #092F87 !important;
     }
     
     /* Three Bars color control */
 
     .navControlBars {
-        color: #f69421 !important;
+        color: #092F87 !important;
         background-color: transparent !important;
     }
     
     .colorControlNoBackground {
-        color: #f69421 !important;
+        color: #092F87 !important;
     }
     
     .colorControlNoBackground:hover,
     .colorControlNoBackground:active,
     .colorControlNoBackground:focus {
-        color: #f69421 !important;
+        color: #092F87 !important;
     }
     
     /* leave this as inherit */
@@ -169,21 +175,70 @@
     }
     
     .colorControlRight > li > a {
-        color: #f69421 !important;
-    }
-    
-    .colorControlRight > li > a:hover,
-    .colorControlRight > li > a:active,
-    .colorControlRight > li > a:focus {
-        background-color: #f69421 !important;
         color: #fff !important;
+    }
+
+
+    .colorControlRight > li > a:hover {
+        background-color: #092F87 !important;
+        color: #fff !important;
+    }
+
+    .colorControlRight > li > a:focus {
+        background-color: #092F87 !important;
+        color: #fff !important;   
+    }
+
+    .colorControlRight > li > a:active {
+        background-color: #092F87 !important;
+        color: #fff !important;           
     }
 
     /* dropdown Menus right side */
 
     .navColorRight .colorControlRight > li > .dropdown-menu {
-        background-color: #f69421 !important;
+        background-color: #092F87 !important;
     }
+    
+@media (max-width: 1110px) {   
+    
+    /* mobile colors */
+    .colorControlRight > li > a {
+        
+    }
+    
+    .colorControlRight > li > a:hover {
+        background-color: rgba(255, 255, 255, 0.4) !important;  !important;
+        color: #fff !important;
+        border: 4px solid rgba(255, 255, 255, 0.6) !important; 
+    }
+    
+    .colorControlRight > li > a:focus {
+        background-color: rgba(255, 255, 255, 0.4) !important;  !important;
+        color: #fff !important;
+        border: 4px solid rgba(255, 255, 255, 0.6) !important; 
+    }
+    
+    .colorControlRight > li > a:active {
+        background-color: rgba(255, 255, 255, 0.4) !important;  !important;
+        color: #fff !important;
+        border: 4px solid rgba(255, 255, 255, 0.6) !important; 
+    }
+    
+    .navColorRight .colorControlRight > li > .dropdown-menu {
+        background: none !important;
+    }
+    
+    .rightNavBar .navbar-nav .dropdown li a {
+        background-color: rgba(255, 255, 255, 0.4) !important; 
+        color: #00aeef !important;
+    }
+    
+    .rightNavBar .navbar-nav .dropdown li a:hover {
+        border: 4px solid rgba(255, 255, 255, 0.6) !important; 
+    }
+}
+    
 
     .colorControlRight .dropdown-menu li {
         background-color: transparent !important;
@@ -199,14 +254,14 @@
     /* line above container-view */
 
     #categoryTitle {
-        border-bottom: 3px double #f69421;
+        border-bottom: 3px double #092F87;
         background-color: transparent;
     }
 
     /* line below container-view */
     
     .container-view {
-        border-bottom: 1px solid #f69421 !important;
+        border-bottom: 3px solid #092F87 !important;
     }
 
     /* text Colors */
@@ -308,7 +363,7 @@
 
     /* animation controls */
 
-    #animateControl {
+    .animateControl {
         -webkit-animation-duration: 1s;
         -webkit-animation-delay: 1.5s;
         -moz-animation-duration: 1s;
@@ -316,17 +371,49 @@
         -o-animation-duration: 1s;
         -o-animation-delay: 1.5s;        
     }
+    
+    #mainImageAnimateControl {
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -o-animation-duration: 1s;
+    }
+    
+    #carouselAnimateControl {
+        -webkit-animation-duration: 1s;
+        -webkit-animation-delay: 1s;
+        -moz-animation-duration: 1s;
+        -moz-animation-delay: 1s;        
+        -o-animation-duration: 1s;
+        -o-animation-delay: 1s;        
+    }
+    
+    #transitionControl {
+        transition: all 0.5s ease-in-out;       
+    }
+    
+    .socialIcon {
+        color: #092F86;
+        -webkit-animation-play-state: paused;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: 0.4s;
+    }
+    
+    .socialIcon:hover {
+        color: #00aeef;
+        -webkit-animation-play-state: running;
+        -webkit-animation-iteration-count: infinite;
+    }
 
     .backgroundControl {
         background-color: rgba(255, 255, 255, 0.5) !important;
     }
 
-  
     /* controls headroom hide and display */
     .navbar-fixed-top.headroom {
         transition: all 0.5s ease-in-out;
         border-bottom: 1px solid #fff;
     }
+    
     .navbar-fixed-top.headroom.headroom--unpinned {
       top: -100px;
     }
@@ -337,37 +424,89 @@
     .navSpanContainer {
     }    
 
-
     .carouselContainer {
         position: relative;
         top: 5px;
     }
 
+    .colorHighlight {
+        font-size: normal !important;
+        font-weight: normal !important;
+        font-style: normal !important;
+        line-height: normal !important;
+        color: #00AEEF !important;
+    }
 
-
-
-
+    .orderAlertMessage {
+        margin-top: 25px;
+        font-size: normal;
+        font-weight: normal;
+        font-style: normal;
+        line-height: normal;
+        color: #333333;
+        -webkit-animation-play-state: running;
+        -webkit-animation-iteration-count: 2;
+        animation-iteration-count: 2;
+    }
     
+    #availableIn {
+        height: 3em;
+        overflow: hidden;
+    }
     
+    .notMobile {
+        display: inline;
+        font-weight: bold;
+        color: #002F86;
+    }
     
+    .mobileOnly {
+        display: none;
+    }
     
+@media (max-width: 1110px) { 
     
+    .orderAlertMessage {
+        color: #00AEEF;    
+    }
     
+    .notMobile {
+        display: none;
+    }
     
-/* BB */
-
-
-
-
-
-
-
-
-
-
+    .mobileOnly {
+        display: inline;
+        color: #002F86;
+        font-weight: bold;
+    }
     
+    .mobileOnly:visited {
+        color: #002F86;
+        font-weight: bold;
+    }
+}
+
+    .fa-edit {
+        display:none;
+    }
     
+    /*LoVe - HAte*/
     
+    .linkHighlight {
+        color: #002F86;
+    }
+    
+    .linkHighlight:visited {
+        color: #002F86;
+    }
+    
+    .linkHighlight:hover {
+        color: #00AEEF;
+    }
+    
+    .linkHighlight:active {
+        color: #002F86;
+    }
     
     
     
