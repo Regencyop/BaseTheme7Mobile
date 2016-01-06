@@ -18,11 +18,6 @@ four51.app.config(['$routeProvider', '$locationProvider', function($routeProvide
 		    
         when('/catalog', 
             { templateUrl: 'partials/categoryView.html', controller: 'CategoryCtrl' }).
-
-       	//40849-konaWearAll 
-        //come back to this 
-        //when('/catalog/40849-konaWearAll', 
-        //    {templateUrl: concatProductView, controller: 'CategoryCtrlApparel'}).  
             
         when('/catalog/:categoryInteropID', 
             { templateUrl: 'partials/categoryView.html', controller: 'CategoryCtrl' }).
