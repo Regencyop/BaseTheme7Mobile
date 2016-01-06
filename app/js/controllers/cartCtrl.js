@@ -2,7 +2,7 @@ four51.app.controller('CartViewCtrl', ['$scope', '$routeParams', '$location', '$
 function ($scope, $routeParams, $location, $451, Order, OrderConfig, User, Punchout, $sce, $timeout, $window) {
 
 	if($scope.PunchoutSession.PunchoutOperation != "Inspect")
-		$scope.punchouturl = $sce.trustAsResourceUrl(Punchout.punchoutSession.PunchOutPostURL);
+//		$scope.punchouturl = $sce.trustAsResourceUrl(Punchout.punchoutSession.PunchOutPostURL);
 	$scope.submitPunchoutOrder = function(){
 		$scope.saveChanges(function(data){
 		Punchout.getForm(function(form){
