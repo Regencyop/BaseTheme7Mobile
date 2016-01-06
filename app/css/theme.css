@@ -31,11 +31,13 @@
     
     h1,
     .h1 {
-      font-size: 36px;
+      font-size: 44px;
     }
     h2,
     .h2 {
-      font-size: 30px;
+      font-size: 36px;
+      color: #002F86;
+      font-weight: bold;
     }
     h3,
     .h3 {
@@ -44,6 +46,8 @@
     h4,
     .h4 {
       font-size: 18px;
+      font-weight: bold;
+      color: #002F86;
     }
     h5,
     .h5 {
@@ -237,7 +241,7 @@
     }
     .btn-primary {
       color: #ffffff;
-      background-color: #f69421;
+      background-color: #092F87;
       border-color: #081b24;
     }
     .btn-primary:hover,
@@ -269,7 +273,7 @@
     .btn-primary.disabled.active,
     .btn-primary[disabled].active,
     fieldset[disabled] .btn-primary.active {
-      background-color: #f69421;
+      background-color: #092F87;
       border-color: #081b24;
     }
     
@@ -426,7 +430,7 @@
       background-color: #ffffff;
     }
     .btn-link {
-      color: #f69421;
+      color: #092F87;
       font-weight: normal;
       cursor: pointer;
       border-radius: 0;
@@ -929,7 +933,7 @@
     .nav-pills > li.active > a:hover,
     .nav-pills > li.active > a:focus {
       color: #ffffff;
-      background-color: #f69421;
+      background-color: #092F87;
     }
     .nav-stacked > li {
       float: none;
@@ -1153,7 +1157,9 @@
       padding-bottom: 10px;
       line-height: 20px;
     }
-    @media (max-width: 767px) {
+    
+    /* rightNavBar RightNavButtons Right nav buttons colorcontrolright originally 767px */
+    @media (max-width: 1110px) {
       .navbar-nav .open .dropdown-menu,
       .navbar-nav .open .dropdown-mega .dropdown-menu {
         position: static;
@@ -1311,7 +1317,7 @@
     .navbar-default .navbar-nav > .active > a:hover,
     .navbar-default .navbar-nav > .active > a:focus {
       color: #fefefe;
-      background-color: #f69421;
+      background-color: #092F87;
     }
     
     .navbar-default .navbar-nav > .disabled > a,
@@ -1321,7 +1327,7 @@
       background-color: transparent;
     }
     .navbar-default .navbar-toggle {
-      border-color: #f69421;
+      border-color: #092F87;
     }
     .navbar-default .navbar-toggle:hover,
     .navbar-default .navbar-toggle:focus {
@@ -1337,7 +1343,7 @@
     .navbar-default .navbar-nav > .open > a,
     .navbar-default .navbar-nav > .open > a:hover,
     .navbar-default .navbar-nav > .open > a:focus {
-      background-color: #f69421;
+      background-color: #092F87;
       color: #fff;
     }
     @media (max-width: 767px) {
@@ -1359,7 +1365,7 @@
       .navbar-default .navbar-nav .open .dropdown-mega .dropdown-menu > .active > a:hover,
       .navbar-default .navbar-nav .open .dropdown-mega .dropdown-menu > .active > a:focus {
         color: #ffffff;
-        background-color: #f69421;
+        background-color: #092F87;
       }
       .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
       .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -1489,7 +1495,7 @@
       vertical-align: baseline;
       white-space: nowrap;
       text-align: center;
-    /*  background-color: #f69421; */
+    /*  background-color: #092F87; */
       border-radius: 10px;
     }
     .badge:empty {
@@ -1511,7 +1517,7 @@
     }
     a.list-group-item.active > .badge,
     .nav-pills > .active > a > .badge {
-      color: #f69421;
+      color: #092F87;
       background-color: #ffffff;
     }
     .nav-pills > li > a > .badge {
@@ -1576,7 +1582,7 @@
     a.thumbnail:hover,
     a.thumbnail:focus,
     a.thumbnail.active {
-      border-color: #f69421;
+      border-color: #092F87;
     }
     
     
@@ -1901,7 +1907,7 @@
     .panel-search > .panel-heading,
     .panel-category-list ul li a .empty > .panel-heading,
     .panel-order > .panel-heading {
-      color: #f69421;
+      color: #092F87;
       background-color: #f5f5f5;
       border-color: none;
     }
@@ -1932,7 +1938,7 @@
     }
     .panel-primary > .panel-heading {
       color: #ffffff;
-      background-color: #f69421;
+      background-color: #092F87;
       border-color: #cccccc;
     }
     .panel-primary > .panel-heading + .panel-collapse .panel-body,
@@ -2233,13 +2239,15 @@
     .btn.btn-lg {
       margin: 10px 0;
     }
+    /* inserted here
     
-    
-    @media (min-width: 768px) and (max-width: 991px) {
+        @media (min-width: 768px) and (max-width: 991px) {
       .jumbotron {
         text-align: center;
       }
     }
+    
+    */
     .container-view {
       margin-top: 0px;
       width: 85%;
@@ -2317,7 +2325,7 @@
       display: inline-block;
       margin-top: 15px;
       font-weight: bold;
-      color: #f69421;
+      color: #092F87;
     }
     .nav ul li span i {
       font-size: 18px;
@@ -2353,7 +2361,7 @@
     }
     .jumbotron h2 img {
       max-height: 75px;
-      max-width: auto;
+      width: auto;
     }
     .jumbotron h2 span {
       display: block;
@@ -2428,13 +2436,13 @@
     
     
     .panel-nav ul li a:hover {
-        color: #f69421;
+        color: #092F87;
         font-size: 1.2em;
     }
     
     .panel-nav ul li ul li a {
       font-weight: inherit;
-      color: #f69421;
+      color: #092F87;
     }
     
     .panel-category-list.no-panels {
@@ -2474,7 +2482,7 @@
     
     .panel-category-list ul li .well.image-bg.dark a h4 {
       color: #FFF;
-      text-shadow: 0 0 5px #f69421;
+      text-shadow: 0 0 5px #092F87;
     }
     .panel-category-list ul li a {
       padding: .75em;
@@ -2544,6 +2552,11 @@
         max-width: 500px;
         padding-top: 8px;
     }
+    
+    .navColorRight li a {
+        padding: 11px 0;
+        width: 100%;
+    }
 
 
 /* navBarRight */
@@ -2556,18 +2569,36 @@
         font-size: 16px;
     }
     
-    
-    .navColorRight {
-        background-color: red !important;
+    /* controls right hand side links when carousel is not present */
+
+@media (max-width: 1500px) {
+    .rightNavBar {
+        width: 885px;
+        float: none;
+        clear:both;
+        margin: 0 auto;
     }
     
-    /* controls right hand side links when carousel is not present */
+}
+
+@media (min-width: 1500px) {    
+    .rightNavBar {
+        width: 1050px;
+        float: right;
+    }
+}
+    
+    .responsiveContainerLocation {
+        float: right !important;
+        display: inline;
+    }
     
     .rightNavBar > .navbar-nav > li > a {
         height: 60px;
         padding: 75px 35px;
         line-height: 0px;
         font-weight: 600;
+        font-size: medium;
     }
     
     /* controls right hand side links when carousel is present */
@@ -2582,7 +2613,7 @@
     
 
     .rightNavBar .navbar-nav > li > .dropdown-menu {
-        margin-top: -50px;
+        margin: -2px 0px;
         text-align: center;
         font-size: 15px;
         padding: 12px 20px;
@@ -2633,17 +2664,7 @@
     }
 
     .socialIcon {
-        color: #092F86;
         padding: 0px 10px;
-        -webkit-animation-play-state: paused;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-delay: 1s;
-    }
-    
-    .socialIcon:hover {
-        color: #00aeef;
-        -webkit-animation-play-state: running;
-        -webkit-animation-iteration-count: infinite;
     }
 
     .gaps {
@@ -2747,15 +2768,18 @@
 @media (max-width: 1191px) {
     
     .panel-category-list {
-        height: 850px;
+        height: 825px;
         overflow: hidden;
     }   
+    
+    /* background red
+    move logo to center */
 }
  
 @media (max-width: 992px) {
     
     .panel-category-list {
-        height: 850px;
+        height: 800px;
         overflow: hidden;
     }   
     
@@ -2774,10 +2798,281 @@
         overflow: hidden;
     }   
 }
- 
+
+/* Incredibly Unorganized -- BB */
 
 
-/* -------- PDT --------- */
+
+@media (max-width: 1499px) {
+    
+    .jumbotron .container {
+        height: auto;
+        text-align: center;
+    }
+    
+    .responsiveContainerLocation {
+        clear: both !important;
+        float: none !important;
+        display: inline-block;
+        margin: 25px auto 45px;
+        width: 1077px;
+        border-top: 1px solid rgba(255,255,255,0.75);
+        border-bottom: 1px solid rgba(255,255,255,0.75);
+        padding: 0 0;
+    }
+    
+    .navRightHeightControl > .navbar-nav > li > a {
+        padding: 78px 39px;
+    }
+    
+    .rightNavBar > .navbar-nav > li > a {
+        font-size: medium;
+    }
+    
+    .rightNavBar {
+        
+    }
+}
+
+@media (max-width: 1110px) {
+    .jumbotron .container {
+        height: auto;
+        text-align: center;
+    }
+        
+    .mainImage img {
+        margin-top: 30px;
+    }
+    
+    .navSpanContainer {
+        width: 100%;
+    }
+    
+    .responsiveContainerLocation {
+        clear: both !important;
+        float: none !important;
+        display: inline-block;
+        margin: 0 auto;
+        width: 100% !important;
+        margin-top: 30px;
+    }
+    
+    .navRightHeightControl  > .navbar-nav > li > a {
+        height: 60px;
+        line-height: 0px;
+        font-weight: 600;
+        width: auto;
+        padding: 30px 0px;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.1); 
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        margin: 10px 15px;
+    }
+    
+    .rightNavBar > .navbar-nav > li > a {
+        height: 60px;
+        line-height: 0px;
+        font-weight: 600;
+        width: auto;
+        padding: 30px 0px;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.1); 
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        margin: 7px;
+        font-size: large;
+    }
+    
+    .rightNavBar .navbar-nav > li > .dropdown-menu {
+        margin: 0;
+        text-align: center;
+        font-size: 15px;
+        padding: 12px 20px;
+        width: 100%;
+        margin: -10px 0 5px 0;
+    }
+    
+    .rightNavBar .navbar-nav .dropdown li {
+        margin: 5px 0;
+        border-radius: 10px;
+    }
+    
+    
+    .rightNavBar .navbar-nav .dropdown li a {
+        width: 100%;
+        height: 100%;
+        padding: 20px 0;
+        border-radius: 10px;
+    }
+    
+    .fa-3x {
+      font-size: 200%;
+    }
+    
+    .navRightHeightControl {
+        max-width: 800px;
+    }
+    
+    
+    .rightNavBar {
+        max-width: 800px;
+    }
+    
+    .responsiveContainerLocation li {
+        width: 100%;
+    }
+}
+
+    
+@media (max-width: 1050px) {
+    
+    .mainImage img {
+        margin-top: 30px;
+    }
+    
+    .navSpanContainer {
+        width: 100%;
+    }
+    
+    .responsiveContainerLocation {
+        clear: both !important;
+        float: none !important;
+        display: inline-block;
+        margin: 0 auto;
+        width: 100% !important;
+        margin-top: 30px;
+    }
+    
+    .navRightHeightControl  > .navbar-nav > li > a {
+        height: 60px;
+        line-height: 0px;
+        font-weight: 600;
+        width: auto;
+        padding: 30px 0px;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.1); 
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        margin: 10px 15px;
+    }
+    
+    .rightNavBar > .navbar-nav > li > a {
+        height: 60px;
+        line-height: 0px;
+        font-weight: 600;
+        width: auto;
+        padding: 30px 0px;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.1); 
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        margin: 7px;
+        font-size: large;
+    }
+    
+    .rightNavBar .navbar-nav > li > .dropdown-menu {
+        margin: 0;
+        text-align: center;
+        font-size: 15px;
+        padding: 12px 20px;
+        width: 100%;
+        height: auto;
+        margin: -10px 0 5px 0;
+    }
+    
+    .rightNavBar .navbar-nav .dropdown li {
+        margin: 5px 0;
+        border-radius: 10px;
+    }
+    
+    
+    .rightNavBar .navbar-nav .dropdown li a {
+        width: 100%;
+        height: 100%;
+        padding: 20px 0;
+        border-radius: 10px;
+    }
+    
+    .fa-3x {
+      font-size: 200%;
+    }
+    
+    .navRightHeightControl {
+        max-width: 800px;
+    }
+    
+    
+    .rightNavBar {
+        max-width: 800px;
+    }
+    
+    .responsiveContainerLocation li {
+        width: 100%;
+    }
+    
+    
+    
+}    
+
+@media (max-width: 985px) {
+    #categoryTitle {
+        padding-bottom: 20px;
+    }
+    
+    .categoryName {
+        position: relative;
+        top: 10px;
+    }
+
+}
+
+
+@media (max-width: 395px) {
+    .categoryContainer {
+        height: 300px;
+    }
+    
+    .panel-category-list {
+        height: 1200px;
+        overflow: hidden;
+    }  
+}
+
+@media (max-width: 300px) {
+    .categoryContainer {
+        height: 225px;
+    }
+    
+    .panel-category-list {
+        height: 900px;
+        overflow: hidden;
+    } 
+    
+    .navbar {
+        min-height: 120px;
+    }
+}
+    
+@media (max-width: 200px) {
+    .categoryContainer {
+        height: 150px;
+    }
+    
+    .panel-category-list {
+        height: 600px;
+        overflow: hidden;
+    }  
+}
+
+    .panel-product-list {
+        padding-bottom: 25px;
+    }
+    
+    
+    .brandingAndNavContainer {
+        height: auto;
+    }
+    
+    
+  
+/* -------- PDT - Always append to bottom --------- */
 
 
 /* -------- BT7-Template 1 --------- */
@@ -2805,12 +3100,12 @@
     }
 
     .product-detail-default .template1Controller .productName{
-    	background-color: #0078C0;
-    	color: #fff;
-    	margin-left: 5px;
-    	padding-left: 10px;
-    	text-transform: uppercase;
-    	width: 99.25%;
+        background-color: #0078C0;
+        color: #fff;
+        margin-left: 5px;
+        padding-left: 10px;
+        text-transform: uppercase;
+        width: 99.25%;
     }
     
     .product-detail-default .template1Controller .panel-primary{
@@ -2892,6 +3187,11 @@
         width:50%;
     }
     
+    
+    .product-detail-default .template1Controller .matrix-grid .form-control {
+        width: 100%;
+    }
+    
    .product-detail-default .template1Controller .form-control{
        width:50%;
    }
@@ -2908,71 +3208,84 @@
         margin-top: 10px;
     }
     
-        .product-detail-default .template1Controller .imageWidth {
+    .product-detail-default .template1Controller .imageWidth {
         width: 38%;
         border-right: 2px solid #bbb;
         margin-right: 3%;
     }
-
-
+    
+@media (min-width: 769px) {
+    .expandOnMobile {
+        display: none;
+    }
+}
+    
 @media (max-width: 1500px) {
     .product-detail-default .template1Controller .imageWidth {
         width: 38%;
         border-right: 2px solid #bbb;
         margin-right: 3%;
     } 
-}
- 
+}    
+    
 @media (max-width: 1191px) {
     .product-detail-default .template1Controller .imageWidth {
         width: 38%;
         border-right: 2px solid #bbb;
         margin-right: 3%;
     } 
-}
- 
+}    
+    
 @media (max-width: 992px) {
     .product-detail-default .template1Controller .imageWidth {
         width: 100%;
-        border-right: 2px solid #bbb;
+        border-right: none;
         margin-right: 3%;
-    } 
+    }
+
 }    
     
     
-    
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .product-detail-default .template1Controller .imageWidth {
         width: 100%;
-        border-right: 2px solid #bbb;
+        border-right: none;
         margin-right: 3%;
     }
     
-    .jumbotron .container {
-        height: 100px;
+    .collapseOnMobile {
+        display: none;
     }
-}
-
-@media (max-width: 395px) {
-    .categoryContainer {
-        height: 300px;
-    }
-}
-
-@media (max-width: 300px) {
-    .categoryContainer {
-        height: 225px;
-    }
-}
     
-@media (max-width: 200px) {
-    .categoryContainer {
-        height: 150px;
+    .expandOnMobile {
+        display: inline;
+    }
+    
+}   
+
+@media (max-width: 470px) {
+    
+    .collapseOnMobile {
+        display: none;
+    }
+    
+    .expandOnMobile {
+        display: none;
+    }
+    
+    .xsDevices {
+        padding: 0 10px;
     }
 }
 
-.panel-product-list {
-    padding-bottom: 25px;
+@media (max-width: 360px) {
+    
+    .xsDevices {
+        padding: 0 0px;
+    }
 }
 
-
+    
+    
+    
+    
