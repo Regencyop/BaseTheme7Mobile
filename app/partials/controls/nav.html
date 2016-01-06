@@ -16,17 +16,30 @@
                     </li>
                     <li class="dropdown admin-user visible-xs visible-sm visible-md visible-lg">
                         <a id="451qa_acct_link2" class="dropdown-toggle colorControl" data-toggle="dropdown">
-                            <b class="caret"></b>
+                            <i class="fa fa-bars"></i>
                             <span>{{'Categories' | r | xlat}}</span>
                         </a>
                         <ul class="dropdown-menu" id="dropdownColorControl">
                                 <categorytree tree='tree' current='currentCategory' />
                         </ul>
                     </li>
+                    <!--http://kona-ice.wt-demo.com/-->
                     <li>
-                        <a class="colorControl" href="https://vibenet.thalerus.com/Regency">Office Supplies</a>
+                        <a href="http://franchisee.kona-ice.com/" target="_blank" class="colorControl">
+                            <i class="fa fa-truck xsDevices"></i>
+                            <span class="collapseOnMobile">Kona Franchisee News</span>
+                            <span class="expandOnMobile">Franchisee</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.kreationsflavoring.com" target="_blank" class="colorControl">
+                            <i class="fa fa-tint xsDevices"></i>
+                            <span class="collapseOnMobile">Kona Kreations</span>
+                            <span class="expandOnMobile">Kreations</span>
+                        </a>
                     </li>
                 </ul>
+                
                 <ul class="nav navbar-nav pull-right">
                     <li class="cart" ng-class="{'active': isActive(['cart', 'checkout'])}">
                         <a id="451qa_cart_link" ng-show="cartCount && user.CurrentOrderID" class="cart colorControl" href="cart">
@@ -40,9 +53,6 @@
         </section>
     </nav>
 </header>
-
-
-
 
 
 
