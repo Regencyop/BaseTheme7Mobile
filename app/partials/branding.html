@@ -1,45 +1,84 @@
 <section class="jumbotron" ng-class="{'active': 'active'}" ng-show="user.Company.LogoUrl">
     <div class="container navSpanContainer">
         <!-- Begin NavBarRight-->
-        <span class="mainImage">    
+        <span class="mainImage animated flipInX" id="mainImageAnimateControl">    
             <a ng-click="refreshUser()" href="catalog">
-                <img ng-src="{{user.Company.LogoUrl}}" />
-                <!--<img src="http://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/imagesFolder/restOfImageLink.jpg" /> -->
+                <!--<img ng-src="{{user.Company.LogoUrl}}" />-->
+                <img src="https://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/imagesFolder/konaIce/konaSiteLogo.png" />
             </a>
         </span>
-        <span class="pull-right rightNavBar collapse navbar-collapse navColorRight" ng-class="{'navRightHeightControl': isActive('catalog')}" id="rightNavBarContainer">
-          <ul class="nav navbar-nav colorControlRight">
-            <!-- to replace links, replace this code -->
-            
+        <span class="rightNavBar navColorRight" ng-class="{'navRightHeightControl': isActive('catalog')}" id="rightNavBarContainer">
+          <ul class="responsiveContainerLocation nav navbar-nav colorControlRight">
+            <!--to adjust the links, change everything between the two ul tags-bb-->
+            <!--Kona Wear-->            
             <li class="dropdown">
-              <a href="catalog/34463-Apparel" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apparel<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="catalog/34463-men">Men</a></li>
-                <li><a href="catalog/34463-Ladies">Ladies</a></li>
-                <li><a href="catalog/34463-Hats">Hats</a></li>
-                <li><a href="catalog/34463-AllApparel">All</a></li>
-              </ul>
+            <a href="catalog/40849-KonaWearAll" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kona Wear<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="catalog/40849-KonaWear-Mens">Men's</a></li>
+                    <li><a href="catalog/40849-KonaWear-Womens">Women's</a></li>
+                    <li><a href="catalog/40849-KonaWear-Unisex">Unisex</a></li>
+                    <li><a href="catalog/40849-KonaWear-Youth">Youth</a></li>
+                    <li><a href="catalog/40849-KonaWear-Hats">Hats</a></li>
+                    <li><a href="catalog/40849-KonaWearAll">All</a></li>
+                 </ul>
             </li>
-            <li class="active"><a href="catalog/34463-promo">Promo <span class="sr-only">(current)</span></a></li>
+
+            <!--Promotional-->
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Marketing<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Business Cards</a></li>
-                <li><a href="#">Signs</a></li>
-                <li><a href="#">Banners</a></li>
-                <li><a href="#">Promotional Cards</a></li>
-                <li><a href="#">Flyers</a></li>
-              </ul>
+            <a href="catalog/40849-PromoAll" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Promotional<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="catalog/40849-Bracelets">Bracelets</a></li>
+                    <li><a href="catalog/40849-Stickers">Stickers</a></li>
+                    <li><a href="catalog/40849-Tattoos">Tattoos</a></li>
+                    <li><a href="catalog/40849-PromoMisc">Miscellaneous</a></li>
+                    <li><a href="catalog/40849-PromoAll">All</a></li>
+                 </ul>
             </li>
-            <li class="active"><a href="#">Flyers<span class="sr-only">(current)</span></a></li>
-            <li class="active"><a href="#">New Additions<span class="sr-only">(current)</span></a></li>
             
-            <!-- end of right side links -->
-          </ul>
+            <!--Marketing-->
+            <li class="dropdown">
+            <a href="catalog/40849-MarketingAll" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Marketing<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="catalog/40849-BusinessCards">Business Cards</a></li>
+                    <li><a href="catalog/40849-EnvelopesAndLetterhead">Envelopes & Letterhead</a></li>
+                    <li><a href="catalog/40849-PostersAndFlyers">Posters & Flyers</a></li>
+                    <li><a href="catalog/40849-MarketingMiscellaneous">Miscellaneous</a></li>
+                    <li><a href="catalog/40849-MarketingAll">All</a></li>
+                 </ul>
+            </li>
+            
+            <!--Cups and Straws-->
+            <li class="dropdown">
+            <a href="catalog/40849-CupsAll" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cups & Straws<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="catalog/40849-ColorChangingCups">Color Changing Cups</a></li>
+                    <li><a href="catalog/40849-IslandRushCups">Island Rush Cups</a></li>
+                    <li><a href="catalog/40849-TruckStadiumCups">Truck Stadium Cups</a></li>
+                    <li><a href="catalog/40849-CupsMiscellaneous">Miscellaneous</a></li>
+                    <li><a href="catalog/40849-CupsAll">All</a></li>
+                 </ul>
+            </li>
+                        
+            <!--KEV Supplies-->
+            <li class="dropdown">
+            <a href="catalog/40849-KEVAll" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">KEV Supplies<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="catalog/40849-BottlesAndJugs">Bottles & Jugs</a></li>
+                    <li><a href="catalog/40849-CapsAndSpouts">Caps & Spouts</a></li>
+                    <li><a href="catalog/40849-ShaverItems">Shaver Items</a></li>
+                    <li><a href="catalog/40849-SpecialOrderItems">Special Order Items</a></li>
+                    <li><a href="catalog/40849-KEVMisc">Miscellaneous</a></li>
+                    <li><a href="catalog/40849-KEVAll">All</a></li>
+                 </ul>
+            </li>
+            
+            <!--***Last Chance***-->
+            <li  class="active"><a  href="catalog/40849-LastChance">Last Chance<span  class="sr-only">(current)</span></a></li>
+
         </span>
     </div>
 </section>
-<section class="jumbotron carouselContainer" ng-class="{'active': isActive('catalog')}">
+<section class="jumbotron carouselContainer animated fadeIn" id="carouselAnimateControl" ng-class="{'active': isActive('catalog')}">
     <customcarousel></customcarousel>
 </section>
 
